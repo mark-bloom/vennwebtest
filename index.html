@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+
+    <title>Carousel Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">RZ Venn Test</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- VENN DIAGRAM TEST -->
+    <!-- <div class="container venn" align="center">
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="40%" width="40%" viewBox="0 0 100 100" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <path class="venn-red vpath" id="vcol-red" d="M 50 8 A 30 30 0 1 0 21 59 30 30 0 0 1 41 36 30 30 0 0 1 50 8" />
+        <path class="venn-red venn-yellow vpath" id="vcol-orange" d="M 50 8 A 30 30 0 0 0 41 36 30 30 0 0 1 59 36 30 30 0 0 0 50 8" />
+        <path class="venn-yellow vpath" id="vcol-yellow" d="M 50 8 A 30 30 0 1 1 79 59 30 30 0 0 0 59 36 30 30 0 0 0 50 8" />
+        <path class="venn-red venn-blue vpath" id="vcol-purple" d="M 50 52 A 30 30 0 0 1 21 59 30 30 0 0 1 41 36 30 30 0 0 0 50 52" />
+        <path class="venn-red venn-yellow venn-blue vpath" id="vcol-white" d="M 50 52 A 30 30 0 0 1 41 36 30 30 0 0 1 59 36 30 30 0 0 1 50 52" />
+        <path class="venn-yellow venn-blue vpath" id="vcol-green" d="M 50 52 A 30 30 0 0 0 79 59 30 30 0 0 0 59 36 30 30 0 0 1 50 52" />
+        <path class="venn-blue vpath" id="vcol-blue" d="M 21 59 A 30 30 0 1 0 79 59 30 30 0 0 1 50 52 30 30 0 0 1 21 59" />
+      </svg>
+    </div> -->
+    <div class="container venn2" align="center">
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="80%" width="80%" viewBox="0 0 1373.73 1199.76" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <path class="cls-1 venn-blue vpath" id="vcol-blue" d="M557,929A216.57,216.57,0,0,1,368.73,605.41a218.09,218.09,0,0,1,73.92-76.85,247.77,247.77,0,0,0,126.71,176.7c-.06,2.49-.1,4.91-.1,7.2a246.74,246.74,0,0,0,90,190.87A216.88,216.88,0,0,1,557,929Z"/>
+        <path class="cls-1 venn-yellow venn-blue vpath" id="vcol-green" d="M686.86,885.67a215.38,215.38,0,0,1-86.49-166.36,248.56,248.56,0,0,0,173-.09A215.39,215.39,0,0,1,686.86,885.67Z"/>
+        <path class="cls-1 venn-yellow vpath" id="vcol-yellow" d="M816.76,929a217,217,0,0,1-102.27-25.63,246.75,246.75,0,0,0,90-190.88c0-2.44,0-4.9-.11-7.32A247.76,247.76,0,0,0,930.83,528.41a216.35,216.35,0,0,1,102.43,184.05A216.51,216.51,0,0,1,816.76,929Z"/>
+        <path class="cls-1 venn-red venn-yellow vpath" id="vcol-orange" d="M801,671.2a247.2,247.2,0,0,0-86.52-149.63,217.07,217.07,0,0,1,187.18-8.32,213.64,213.64,0,0,1-33,91.44A218.73,218.73,0,0,1,801,671.2Z"/>
+        <path class="cls-1 venn-red vpath" id="vcol-red" d="M686.87,501.75a247.91,247.91,0,0,0-216.54-21.21,216.5,216.5,0,0,1,432.79-.09,248,248,0,0,0-216.25,21.3Z"/>
+        <path class="cls-1 venn-red venn-blue vpath" id="vcol-purple" d="M572.66,671.34a216.37,216.37,0,0,1-100.87-158,217,217,0,0,1,187.42,8.21A247.19,247.19,0,0,0,572.66,671.34Z"/>
+        <path class="cls-1 venn-red venn-yellow venn-blue vpath" id="vcol-white" d="M686.73,703.8a215,215,0,0,1-84.93-17.29,217.33,217.33,0,0,1,85.06-147.27,217.29,217.29,0,0,1,85,147.16A214.88,214.88,0,0,1,686.73,703.8Z"/>
+    </div>
+  <!-- END VENN DIAGRAM TEST -->
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4 col-sm-6 vcat-red vitem">
+          <img class="img-rectangle" src="img/azure-app-service-web-apps-with-yochay-kiriaty.png" alt="Azure App Service Web Apps with Yochay Kiriaty" height="140">
+          <h2>Red 1</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus suscipit euismod arcu faucibus cursus.</p>
+          <p><a class="btn btn-default" href="https://azure.microsoft.com/en-us/documentation/videos/azure-app-service-web-apps-with-yochay-kiriaty/" role="button">Watch a video &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+       <div class="col-lg-4 col-sm-6 vcat-blue vitem">
+          <img class="img-rectangle venn-blue" src="img/02-familiar.png" alt="" height="140">
+          <h2>Blue 2</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus suscipit euismod arcu faucibus cursus.</p>          
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 col-sm-6 vcat-yellow vitem">
+          <img class="img-rectangle venn-yellow" src="img/03-enterprise.png" alt="" height="140">
+          <h2>Yellow 3</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus suscipit euismod arcu faucibus cursus.</p>          
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 col-sm-6 vcat-blue vcat-red vitem">
+          <img class="img-rectangle venn-purple" src="img/04-scale.png" alt="" height="140">
+          <h2>Purple 4</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus suscipit euismod arcu faucibus cursus.</p>          
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 col-sm-6 vcat-blue vcat-yellow vitem">
+          <img class="img-rectangle venn-green" src="img/05-dev.png" alt="" height="140">
+          <h2>Green 5</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus suscipit euismod arcu faucibus cursus.</p>          
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 col-sm-6 vcat-red vcat-yellow vitem">
+          <img class="img-rectangle venn-orange" src="img/05-dev.png" alt="" height="140">
+          <h2>Orange 6</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus suscipit euismod arcu faucibus cursus.</p>          
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 col-sm-6 vcat-red vcat-blue vcat-yellow vitem">
+          <img class="img-rectangle venn-white" src="img/05-dev.png" alt="" height="140">
+          <h2>White 7</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus suscipit euismod arcu faucibus cursus.</p>          
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2016 Microsoft Corp. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="ie10-viewport-bug-workaround.js"></script>
+    <!-- Custom JS for this file -->
+    <script src="js/custom.js"></script>
+  </body>
+</html>
