@@ -134,53 +134,79 @@ body {
   }
 }
 
-/* RZ Venn Test */
+
+/* RZ VENN TEST
+-------------------------------------------------- */
+
 svg {
   overflow: visible;
 }
 .venn {
   padding-bottom: 30px;
 }
-/* .venn2 {
-  margin-top: -80px;
-  margin-bottom: -30px;
-} */
+
 path {
   fill: transparent;
   stroke: black;
   stroke-width: 1;
 }
 path.cls-1 {
-  fill: transparent;
-  stroke: black;
-  stroke-width: 3;
   transition: all 0.25s ease-out;
   transform-origin: 50% 50%;
 }
 path.cls-1:hover {
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
-#vcol-red:hover {
+path.cls-1.vselected {
+  transform: scale(1.08);
+}
+#vcol-red     { transform-origin: 50% 32%; }
+#vcol-orange  { transform-origin: 64% 45%; }
+#vcol-yellow  { transform-origin: 68% 64%; }
+#vcol-purple  { transform-origin: 35% 46%; }
+#vcol-white   { transform-origin: 50% 50%; }
+#vcol-green   { transform-origin: 50% 67%; }
+#vcol-blue    { transform-origin: 30% 65%; }
+
+/* #vcol-red:hover {
   fill: red;
-  /* fill: url(#img1); */
+}
+#vcol-red.vselected {
+  fill: red;
 }
 #vcol-orange:hover {
   fill: orange;
 }
+#vcol-orange.vselected {
+  fill: orange;
+}
 #vcol-yellow:hover {
   fill: yellow;
-  /* fill: url(#img1); */
+}
+#vcol-yellow.vselected {
+  fill: yellow;
 }
 #vcol-purple:hover {
+  fill: purple;
+}
+#vcol-purple.vselected {
   fill: purple;
 }
 #vcol-white:hover {
   fill: white;
 }
+#vcol-white.vselected {
+  fill: white;
+}
 #vcol-green:hover {
+  fill: green;
+}
+#vcol-green.vselected {
   fill: green;
 }
 #vcol-blue:hover {
   fill: blue;
-  /* fill: url(#img1); */
 }
+#vcol-blue.vselected {
+  fill: blue;
+} */
